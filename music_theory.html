@@ -1,0 +1,34 @@
+---
+layout: page
+title: Research
+permalink: /research/
+---
+{% include hide_and_show_header.html %}
+
+{% for work in site.music_theory %}
+  {% assign div_id = work.title | downcase | replace: " ", "-" %}
+  <div class="hide-and-show" onClick="myFunction('{{ div_id }}')"><h3>{{ work.title }}
+    <span id="{{ div_id }}-closed-arrow">{% include octicon id="chevron-up" size="16" %}</span><span id="{{ div_id }}-open-arrow" style="display: none;">{% include octicon id="chevron-down" size="16" %}</span>
+    </h3>
+  {% if work.subheading %}
+    <h4>{{ work.subheading }}</h4>
+  {% endif %}
+  </div>
+  <div id="{{ div_id }}-div" class="research_content" style="display: none;">
+    {% for download in work.downloads %}
+      <a href="/assets/{{ download.path }}">Download{% if download.text %} {{ download.text }}{% endif %}</a>
+    {% endfor %}
+    {{ work.content }}
+    {% if work.abstract %}
+      <p><span class="item_title">Abstract</span>: {{ work.abstract }}</p>
+    {% endif %}
+    {% if work.has_imgs %}
+      <div class="selected-figures">
+        <h4>Selected figures</h4>
+        {% for image in work.has_imgs %}
+          <img src="/assets/images/{{ image }}" alt="{{ work.title }} image" class="research_image">
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+{% endfor %}
