@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Welcome to the new and improved (?) malcolmsailor.com"
+date:   2021-02-20
+---
+
+Welcome to my new website! It may still be rickety or incomplete here and there, so if you notice anything amiss please feel free to [notify me](mailto:malcolm.sailor@gmail.com).
