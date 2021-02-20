@@ -3,4 +3,4 @@ layout: page
 title: Chamber music
 ---
 
-In 2013--14 I was especially interested in writing chamber music that emulated the traditional tonal idiom, but avoided dominant-to-tonic resolutions and made use of non-diatonic modes.
+I have written lots of chamber music, some which has found its way online thanks to the intervention of my many musically talented friends. I particularly like writing chamber music that outwardly emulates the traditional tonal idiom, but avoids dominant-to-tonic resolutions and makes use of non-diatonic modes.

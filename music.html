@@ -1,0 +1,48 @@
+---
+layout: ms_page
+title: Music
+permalink: /music/
+hide_and_show_preamble: "Click on each genre to read/listen"
+---
+
+{% include hide_and_show_header.html preamble=page.hide_and_show_preamble %}
+{% for genre in site.music_genres %}
+  {% assign genre_id = genre.title | slugify %}
+  {% capture genre_content %}
+
+    {{ genre.content }}
+
+    {% for work in site.music_works %}
+      {% if work.genre contains genre.title %}
+        {% assign work_id = work.title | slugify %}
+        {% unless genre.works_no_title %}
+          <h4 id="{{ work_id }}">{{ work.title }}</h4>
+        {% endunless %}
+        {% if work.content %}
+          <p>{{ work.content }}</p>
+        {% endif %}
+        {% if work.bandcamp %}
+          {% include bandcamp.html
+            album_num=work.bandcamp.album_num
+            track_num=work.bandcamp.track_num
+            url=work.bandcamp.url
+            title=work.bandcamp.title
+          %}
+        {% endif %}
+        {% if work.youtube %}
+          {% include youtube.html youtube=work.youtube id=work_id %}
+        {% endif %}
+        {% if work.soundcloud %}
+          {% include soundcloud.html soundcloud=work.soundcloud %}
+        {% endif %}
+        {% include references.html id=work_id title=work.title %}
+      {% endif %}
+    {% endfor %}
+  {% endcapture %}
+  {% include hide_and_show_item.html
+    title=genre.title
+    content=genre_content
+    item_id=genre_id
+    content_class="genre-content"
+  %}
+{% endfor %}

@@ -1,0 +1,5 @@
+{% for work in site.music_works %}
+  {% if work.title == include.title %}
+{% include youtube.html youtube=work.youtube %}
+  {% endif %}
+{% endfor %}

@@ -8,4 +8,7 @@ has_imgs:
   - ma_thesis1.png
   - ma_thesis2.png
   - ma_thesis3.png
+year: 2018
 ---
+
+I have often explored the use of non-diatonic modes in my chamber music, for example in my 2014 [string quartet](/music/#for-string-quartet). In this thesis, I wanted to explore what I had been doing from a more theoretical perspective.

@@ -1,0 +1,17 @@
+<!-- <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/{% if include.album_num %}album={{ include.album_num }}{% else %}track={{ include.track_num }}{% endif %}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless>
+  <a href="{{ include.url }}">
+    {{include.title}}
+  </a>
+</iframe> -->
+
+<!-- <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/{% if include.album_num %}album={{ include.album_num }}{% else %}track={{ include.track_num }}{% endif %}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless>
+  <a href="{{ include.url }}">
+    {{include.title}}
+  </a>
+</iframe> -->
+
+<iframe style="border: 0; width: 400px; height: 241px;" src="https://bandcamp.com/EmbeddedPlayer/{% if include.album_num %}album={{ include.album_num }}{% else %}track={{ include.track_num }}{% endif %}/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/" seamless>
+  <a href="{{ include.url }}">
+    {{include.title}}
+  </a>
+</iframe>

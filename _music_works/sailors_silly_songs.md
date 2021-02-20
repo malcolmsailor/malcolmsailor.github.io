@@ -1,8 +1,9 @@
 ---
 title: Sailor's Silly Songs
 genre: Other
-bandcamp:
-  album_num: 2903542436
-  url: http://malcolmsailor.bandcamp.com/album/sailors-silly-songs
-  title: Sailor&#39;s Silly Songs by Malcolm Sailor
+youtube:
+  id: PLrPqhvBGhyHDHsW6QDURe9TH9UwvlKdOq
+  playlist: true
 ---
+
+Every now and then I like to write a silly song or two and sometimes I even get the idea into my head to post them on the internet.

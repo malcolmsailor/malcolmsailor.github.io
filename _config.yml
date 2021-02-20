@@ -42,7 +42,7 @@ collections:
     - octicons
 
 header_pages:
-    - music.md
+    - music.html
     - music_theory.html
     - coding_projects.md
     - about.md

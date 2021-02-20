@@ -1,0 +1,28 @@
+{% assign delim = "|||" %}
+{% assign post_urls = "" %}
+{% assign post_titles = "" %}
+{% for post in site.posts %}
+  {% if post.references contains include.id %}
+    {% unless post_titles == "" %}
+      {% assign post_urls = post_urls | append: delim %}
+      {% assign post_titles = post_titles | append: delim %}
+    {% endunless %}
+    {% assign post_urls = post_urls | append: post.url %}
+    {% assign post_titles = post_titles | append: post.title %}
+  {% endif %}
+{% endfor %}
+{% unless post_titles == "" %}
+  <div class="post-references-wrapper">
+    {% assign post_urls = post_urls | split: delim %}
+    {% assign post_titles = post_titles | split: delim %}
+    {% assign num_posts = post_titles.size | minus: 1 %}
+      <p class="post-references-intro">
+        {% if num_posts > 0 %}Posts that discuss{% else %}A post that discusses{% endif %} <span class="post-references-work-title">{{ include.title }}</span>:
+      </p>
+    <ul class="post-references-list">
+    {% for post_i in (0..num_posts) %}
+      <li class="post-references-list-item"><a href="{{ post_urls[post_i] }}">{{ post_titles[post_i] }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+{% endunless %}
