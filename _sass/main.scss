@@ -43,10 +43,6 @@ div .hide-and-show-title {
   line-height: normal;
 }
 
-.genre-content {
-  width: 100%;
-}
-
 div .abstract {
   font-size: 15px;
   margin: 0px 10px;
@@ -94,4 +90,13 @@ img .banner-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.genre-content {
+  margin-left: 10px;
+}
+
+.music-work-wrapper, .genre-content-wrapper {
+  margin-left: 10px;
+  width: 100%;
 }

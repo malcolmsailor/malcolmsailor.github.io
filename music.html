@@ -9,17 +9,19 @@ hide_and_show_preamble: "Click on each genre to read/listen"
 {% for genre in site.music_genres %}
   {% assign genre_id = genre.title | slugify %}
   {% capture genre_content %}
-
-    {{ genre.content }}
-
+    <div class="genre-content">{{ genre.content }}</div>
     {% for work in site.music_works %}
       {% if work.genre contains genre.title %}
         {% assign work_id = work.title | slugify %}
         {% unless genre.works_no_title %}
           <h4 id="{{ work_id }}">{{ work.title }}</h4>
+          <div class="music-work-wrapper">
+        {% else %}
+          <div class="music-work-wrapper-no-title">
         {% endunless %}
+
         {% if work.content %}
-          <p>{{ work.content }}</p>
+          <p class="work-content">{{ work.content }}</p>
         {% endif %}
         {% if work.bandcamp %}
           {% include bandcamp.html
@@ -36,6 +38,7 @@ hide_and_show_preamble: "Click on each genre to read/listen"
           {% include soundcloud.html soundcloud=work.soundcloud %}
         {% endif %}
         {% include references.html id=work_id title=work.title %}
+        </div>
       {% endif %}
     {% endfor %}
   {% endcapture %}
@@ -43,6 +46,6 @@ hide_and_show_preamble: "Click on each genre to read/listen"
     title=genre.title
     content=genre_content
     item_id=genre_id
-    content_class="genre-content"
+    content_class="genre-content-wrapper"
   %}
 {% endfor %}
