@@ -92,6 +92,18 @@ img .banner-img {
   margin-right: auto;
 }
 
+.about-photo-small {
+  width: 100px;
+}
+
+.intro-pic, .intro-text {
+  display: inline-block;
+}
+
+.intro-text {
+  max-width: 400px;
+}
+
 .genre-content {
   margin-left: 10px;
 }
@@ -104,4 +116,8 @@ img .banner-img {
 .footnotes {
   font-size: 14px;
   margin-left: 15px;
+}
+
+li > ul, li > ol {
+    margin-bottom: 15px;
 }
