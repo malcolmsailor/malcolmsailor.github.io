@@ -1,20 +1,25 @@
 <div class="block">
   <div onClick="toggle_view('{{ include.item_id }}')">
     <div class="hide-and-show-title">
-      <h3 id="{{ include.item_id }}"{% if include.subheading %} class="has_subheading"{% endif %}>{{ include.title }}
+      <h3 id="{{ include.item_id }}" {% if include.subheading %} class="has_subheading" {% endif %}>
+        {{ include.title }}
         <span id="{{ include.item_id }}-closed-arrow">
           {% include octicon id="chevron-up" size="16" %}
         </span>
-        <span id="{{ include.item_id }}-open-arrow" style="display: none;">
+        <span id="{{ include.item_id }}-open-arrow" style="display: none">
           {% include octicon id="chevron-down" size="16" %}
         </span>
       </h3>
     </div>
     {% if include.subheading %}
-      <h4>{{ include.subheading }}</h4>
+    <h4>{{ include.subheading }}</h4>
     {% endif %}
   </div>
 </div>
-<div id="{{ include.item_id }}-content" class="{{ include.content_class }} hide-and-show" style="display: none;">
-{{ include.content }}
+<div
+  id="{{ include.item_id }}-content"
+  class="{{ include.content_class }} hide-and-show"
+  style="display: none"
+>
+  {{ include.content }}
 </div>

@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://malcolmsailor.github.io/"
 twitter_username:
-github_username:  malcolmsailor
+github_username: malcolmsailor
 
 # Build settings
 markdown: kramdown
@@ -29,24 +29,24 @@ plugins:
   - jekyll-feed
 
 kramdown:
-    auto_ids: true
+  auto_ids: true
 
 show_excerpts: true
+excerpt_separator: <!--more-->
 
 collections:
-    - music_genres
-    - music_works
-    - animations
-    - coding_projects
-    - music_theory
-    - octicons
+  - music_genres
+  - music_works
+  - animations
+  - coding_projects
+  - music_theory
+  - octicons
 
 header_pages:
-    - music.html
-    - music_theory.html
-    - coding_projects.md
-    - about.md
-
+  - music.html
+  - music_theory.md
+  - coding_projects.md
+  - about.md
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

@@ -17,6 +17,8 @@ Before Anki, I read a lot and never remembered any of it. Now, I read a lot and 
 
 I used to flatter myself that I was an Anki power user. But then I was disabused of this notion by the Reddit posts of Anki savant [SigmaX](https://www.reddit.com/r/Anki/comments/151k2ho/anki_became_my_metahobby_in_2017_what_a_journey/). As a musician, I was especially struck by his notion of using Anki not just to memorize atoms of information, but also to schedule the [practice of skills](https://imgur.com/a/7dpMHhc). Inspired by these posts, I've been scheduling my jazz practice with Anki. That's what this post is about.
 
+<!--more-->
+
 ## The problem with practice routines
 
 Say you have a specific exercise, technique, or piece that you work on regularly. Maybe every day, maybe every week, whatever. Such practice routines are great! Over the years I have invented or adopted many of them  to hone one or another aspect of my musicianship.
@@ -57,4 +59,4 @@ Because these dimensions are independent of each other, I have a different deck 
 
 The result is a new exercise that I have most likely never played before. But each different dimension of the exercise is something that I've been working on. And the combination feels fresh and fun, because it is new.
 
-I've only been using this approach for a couple months now. Maybe this sense of freshness and fun will wear off eventually. But I'm hoping it'll wear off a little more slowly than the usual practice routine does. And I frankly wish I had discovered this approach to practicing when I was younger (and actually doing a lot more of it).
+I've only been using this approach for a couple months now. Maybe this sense of freshness and fun will wear off eventually. But I'm hoping it'll wear off a little more slowly than it does with the more usual practice routines. And I frankly wish I had discovered this approach to practicing when I was younger (and actually doing a lot more practicing).
