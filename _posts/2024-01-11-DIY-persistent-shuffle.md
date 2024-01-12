@@ -16,7 +16,7 @@ Consider the chart below, where I've simulated listening 10 times to a shuffled 
 
 [^fn1]: For simplicity, I'm assuming that Spotify shuffle is uniformly random. But in fact, I don't think it is, which makes the problem worse than I have described. When shuffling tracks, Spotify appears to favor tracks that it A) thinks you particularly like (because you have listened to them before), or B) thinks people like in general (because they have been listened to a lot). That is, it seems to put tend to put these tracks earlier in the queue. This may be good user design (in general, people are probably *pleased* when they put a playlist on and their favorite song comes right on). But it compounds the problem I describe above, because it means that, after (purely by chance) you listen to a track 5, 6, or 7 times, Spotify will put it in the queue ahead of the tracks that you've only heard once or twice, or not at all.
 
-![Simulation of Spotify shuffle](assets/images/spotify_playlist_hist.png)
+![Simulation of Spotify shuffle](/assets/images/spotify_playlist_hist.png)
 
 As you can see , the number of times each track is heard varies widely. Nearly 25% of tracks are heard only once or less. A similar proportion are heard four or more times.
 
