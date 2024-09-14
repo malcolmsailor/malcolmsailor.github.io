@@ -31,6 +31,9 @@ hide_and_show_preamble: "Click on each genre to read/listen"
             title=work.bandcamp.title
           %}
         {% endif %}
+        {% if work.spotify %}
+          {% include spotify.html url=work.spotify.url %}
+        {% endif %}
         {% if work.youtube %}
           {% include youtube.html youtube=work.youtube id=work_id %}
         {% endif %}
