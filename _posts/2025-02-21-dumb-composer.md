@@ -21,7 +21,7 @@ Here's an example of the results. The input chord labels are printed below the s
 ![`dumb_composer` example score.](/assets/images/dumb_composer1.jpg)
 
 <audio controls>
-  <source src="assets/audio/dumb_composer1.mp3" type="audio/mpeg">
+  <source src="/assets/audio/dumb_composer1.mp3" type="audio/mpeg">
   Your browser does not support the audio elements.
 </audio>
 
