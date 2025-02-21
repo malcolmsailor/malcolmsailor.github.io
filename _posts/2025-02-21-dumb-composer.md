@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TEMP TODO
+title: `dumb_composer`: A Rule-Based Classical Music Generator
 date: 2025-01-21
 ---
 
