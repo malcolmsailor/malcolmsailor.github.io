@@ -1,6 +1,6 @@
 ---
 layout: post
-title: `dumb_composer`: A Rule-Based Classical Music Generator
+title: "`dumb_composer`: A Rule-Based Classical Music Generator"
 date: 2025-01-21
 ---
 
