@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "`dumb_composer`: A Rule-Based Classical Music Generator"
-date: 2025-01-21
+date: 2025-02-21
 ---
 
 During my dissertation research, I wrote a Python program that takes a Roman numeral analysis as input and outputs synthetic Classical music. I aimed to generate labeled data for training Roman-numeral analysis models like the one in [my 2024 ISMIR paper](2025/01/06/ISMIR.html), but I found that it did not improve the model's performance.[^generative]
