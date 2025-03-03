@@ -4,7 +4,7 @@ title: "`dumb_composer`: A Rule-Based Classical Music Generator"
 date: 2025-02-21
 ---
 
-During my dissertation research, I wrote a Python program that takes a Roman numeral analysis as input and outputs synthetic Classical music. I aimed to generate labeled data for training Roman-numeral analysis models like the one in [my 2024 ISMIR paper](2025/01/06/ISMIR.html), but I found that it did not improve the model's performance.[^generative]
+During my dissertation research, I wrote a Python program that takes a Roman numeral analysis as input and outputs synthetic Classical music. I aimed to generate labeled data for training Roman-numeral analysis models like the one in [my 2024 ISMIR paper](https://doi.org/10.5281/zenodo.14877455), but I found that it did not improve the model's performance.[^generative]
 
 [^generative]: I should add that a much better way of generating verisimiltudinous Classical music would be to train a generative neural network. Moreover, it's likely that a better approach for creating synthetic labeled data would be to train a generative neural network conditioned on the Roman numeral labels. (A network like [RNBert](2025/01/06/ISMIR.html) could be of help in creating a dataset to train such a network.)
 
