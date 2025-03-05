@@ -1,6 +1,7 @@
 ---
 title: Midani
 external_url: https://github.com/malcolmsailor/midani
+sort_order: 1
 ---
 
 A few years ago, I got interested in providing visual animations to accompany my music online. [Midani]({{ page.external_url }}), a Python script for making piano-roll animations, is the result. Here's a silly example of the results I made for Christmas 2020:
