@@ -31,6 +31,9 @@ plugins:
 kramdown:
   auto_ids: true
 
+include:
+  - static_pages
+
 show_excerpts: true
 excerpt_separator: <!--more-->
 
