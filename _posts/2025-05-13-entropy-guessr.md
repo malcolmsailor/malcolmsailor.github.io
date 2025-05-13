@@ -10,3 +10,12 @@ I recently had an idea for how to build intuition for different values of entrop
 As an exercise in learning React, I recently implemented this idea, and you'll find it just below.
 
 {% include entropyGuessr.html %}
+<!--
+To rebuild the react app
+1. Run npm run build in the EntropyGuessr repo
+2. `trash assets/entropyGuessr/*`
+3. `cp -r /Users/malcolm/google_drive/typescript/EntropyGuessr/dist/ assets/entropyGuessr`
+4. Run `ls assets/entropyGuessr/assets/` and update entropyGuessr.html with the new hash.
+
+There's surely a better way of doing all of this but it works well enough for now.
+-->
